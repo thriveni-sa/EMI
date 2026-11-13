@@ -1,0 +1,7 @@
+issuer_code,issuer_name,emi_eligible,cashback_eligible
+HDFC,HDFC Bank Credit Card,true,true
+ICICI,ICICI Bank Credit Card,true,true
+SBI,SBI Card,true,false
+AXIS,Axis Bank Credit Card,false,true
+KOTAK,Kotak Credit Card,true,true
+AMEX,American Express,false,false

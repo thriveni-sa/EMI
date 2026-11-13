@@ -1,0 +1,28 @@
+# Maven Build Directory
+target/
+*.class
+
+# Log files
+*.log
+
+# IDE & Editor files
+.idea/
+*.iml
+*.iws
+*.ipr
+.eclipse/
+.project
+.classpath
+.settings/
+.vscode/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Generated output directories
+reports/
+output/
+scratch/
+

@@ -545,10 +545,7 @@ def get_data():
 @app.route("/api/run", methods=["POST"])
 def run_cli():
     cmd = ["java", "-jar", "target/ece-035-offer-engine-1.0.0.jar", "commands.txt"]
-    env = os.environ.copy()
-    env["JAVA_HOME"] = r"C:\Users\Thriveni S A\jdks\jdk-24.0.2"
-    env["PATH"] = r"C:\Users\Thriveni S A\jdks\jdk-24.0.2\bin;" + env["PATH"]
-    res = subprocess.run(cmd, cwd=BASE_DIR, env=env, capture_output=True, text=True)
+    res = subprocess.run(cmd, cwd=BASE_DIR, capture_output=True, text=True)
     return jsonify({
         "success": res.returncode == 0,
         "stdout": res.stdout,
@@ -556,6 +553,7 @@ def run_cli():
     })
 
 if __name__ == "__main__":
-    print("Starting ECE-035 Retail Offer Engine Web Dashboard on http://localhost:8080 ...")
-    app.run(host="127.0.0.1", port=8080, debug=False)
+    port = int(os.environ.get("PORT", 8080))
+    print(f"Starting ECE-035 Retail Offer Engine Web Dashboard on http://0.0.0.0:{port} ...")
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)), debug=False)
 

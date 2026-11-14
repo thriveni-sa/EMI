@@ -1,6 +1,10 @@
 # ECE-035: Electronics Retail No-Cost EMI & Cashback Offer Engine
 ### Capstone Project Final Submission — Team E005
 
+## 🚀 Live Demo
+
+**Interactive Dashboard:** https://emi-snh5.onrender.com
+
 [![Java Version](https://img.shields.io/badge/Java-17%2B%20LTS-blue.svg)](https://openjdk.org/)
 [![Build Tool](https://img.shields.io/badge/Maven-3.9%2B-red.svg)](https://maven.apache.org/)
 [![Test Suite](https://img.shields.io/badge/Tests-128%20Passed%20%2F%200%20Failed-brightgreen.svg)]()
